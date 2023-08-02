@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Content Management Tool</title>
+  <link rel="stylesheet" type="text/css" href="/src/style.css" media="screen" />
+  <script src="/src/index.js"></script>
+</head>
+
+<body>
+    <h1>CONTENT MANAGEMENT TOOL</h1>
+  <div class="card">
+    <div class="input-section">
+      <b><label class="label-section" for="title">Title:-</label></b>
+      <input class="div-section" type="text" id="title" placeholder="Enter title">
+    </div>
+    
+    <div class="input-section">
+      <b><label class="label-section" for="discription">Discription:-</label></b>
+      <textarea class="div-section" cols="190" id="discription" placeholder="Enter discription">
+      </textarea>
+    </div>
+
+    <div class="input-section">
+      <b><label class="label-section" for="image">Image (.png, .jpeg)</label></b>
+      <input type="file" id="image" accept="image/*">
+    </div>
+
+    <div class="input-section">
+      <b><label class="label-section" for="video">Video (Mp4)</label></b>
+      <input type="file" id="video" accept="video/*">
+    </div>
+    <div class="input-section">
+        <b><label class="label-section" for="files">Files (.doc,.docx,.pdf,.txt)</label></b>
+        <input type="file" id="files" accept="document/*">
+      </div>
+  </div>
+  <div class="button-section">
+    <button onclick="submitForm()">SUBMIT</button>
+  </div>
+
+  <div class="data-container">
+    <div class="data-section" id="dataSection">
+    </div>
+  </div>
+</body>
+
+</html>
+
